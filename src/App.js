@@ -1,13 +1,22 @@
 import React from "react";
 import "./App.css";
+import Parent from "./parent";
+import styled from 'styled-components';
+import MyButton from "./button";
 
+const Romeo = styled.div`
+font-family:American Typewriter, serif;
+font-size:35px;
+ color:#ff3333;
+ `
 function App() {
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+      <Romeo>
+      romeo
+      </Romeo>
+      <Parent />
+      <MyButton />
     </div>
   );
 }
